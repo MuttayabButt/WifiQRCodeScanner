@@ -1,0 +1,2 @@
+rootProject.name = "Wifi QR Code Scanner"
+include ':app'

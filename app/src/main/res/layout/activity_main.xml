@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hwads="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_tollbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi QR Code Scanner"
+            android:textColor="#FFFF"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="19dp"
+            android:padding="3dp"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/iv_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/ic_more_vert_24"
+            android:padding="3dp"
+            android:layout_margin="8dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/btnScan"
+        android:layout_width="270dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="138dp"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnScan"
+        android:layout_marginTop="17dp"
+        android:text="@string/wifi_qr_code_scanner"
+        android:fontFamily="@font/bold2"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:layout_marginLeft="43dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wifi"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginLeft="43dp"
+        android:padding="3dp"
+        android:fontFamily="@font/italic2"
+        android:text="Scan Your Wifi QR Code To  \nEnjoy Wifi Resources, "/>
+
+
+
+
+    <com.huawei.hms.ads.banner.BannerView
+        android:id="@+id/hw_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        hwads:adId="testw6vs28auh3"
+        hwads:bannerSize="BANNER_SIZE_360_57"
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
